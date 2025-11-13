@@ -1,0 +1,10 @@
+from matplotlib import pyplot as plt
+
+A = [10, 20, 30, 40, 50]
+B = [100, 200, 300, 400, 500]
+
+plt.plot(A, B, marker="+", color="red", linestyle="solid")
+plt.title("     ")
+plt.xlabel("    ")
+plt.ylabel("    ")
+plt.show()
