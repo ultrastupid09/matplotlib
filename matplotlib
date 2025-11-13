@@ -2,7 +2,7 @@ from matplotlib import pyplot as plt
 A = [10, 20, 30, 40, 50]
 B = [100, 200, 300, 400, 500]
 plt.plot(A, B, marker="+", color="red", linestyle="solid")
-plt.title("     ")
+plt.title("Line Chart")
 plt.xlabel("    ")
 plt.ylabel("    ")
 plt.show()
@@ -25,3 +25,10 @@ categories=['A','B','C','D']
 values=[20,30,40,50]
 plt.pie(values,labels=categories,autopct="%1.1f%%")
 plt.title("Pie Chart")
+
+data=np.random.randn(1000)
+plt.hist(data,bins=30,edgecolor='black',alpha=0.7)
+plt.title("Histogrm")
+plt.xlabel("Values")
+plt.ylabel("Frequency")
+plt.show()
